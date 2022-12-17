@@ -3,7 +3,7 @@
 
 I made using [Streamlit](https://www.streamlit.io/).
 
-Woeking link: https://jjaggi-song-predictorr2-app-vekkjr.streamlit.app/
+Woeking link: https://jjaggi-song-predictorr2-app-03m6kp.streamlit.app/
 
 #### Description
 Predicting Spotify song "popularity" scores using linear regression and track audio features/metadata from the Spotify 
