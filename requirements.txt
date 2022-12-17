@@ -6,5 +6,4 @@ statsmodels==0.11.1
 streamlit==0.63.0
 beautifulsoup4==4.9.1
 selenium==3.141.0
-pyarrow
-pyarrow.lib
+pyarrow==0.7.0
