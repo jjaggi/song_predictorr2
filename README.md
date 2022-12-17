@@ -1,21 +1,19 @@
 # Song Popularity Predictor
 
-Play around with the model and make predictions using the [web app](https://song-popularity-predictor.herokuapp.com/)
+
 I made using [Streamlit](https://www.streamlit.io/).
 
-Read the [blog post](https://stephenjkaplan.github.io/2020/07/17/predicting-song-popularity/).
+Woeking link: https://jjaggi-song-predictorr2-app-vekkjr.streamlit.app/
 
 #### Description
 Predicting Spotify song "popularity" scores using linear regression and track audio features/metadata from the Spotify 
 API. 
 
 The popularity of a track is algorithmically calculated, and is a combination of how many plays a track has and 
-how recent those plays are. This was developed over a 2-week span in July 2020 as a project for 
-the [Metis](https://thisismetis.com) data science program.
+how recent those plays are.
 
 The model in `data/final_model.pkl` was trained on Spotify audio features and other data defined below, using a Lasso 
-linear model. The R2 score is `0.58` and it has a RMSE is `13.82`. The blog post about it is 
-[here](https://stephenjkaplan.github.io/).
+linear model. The R2 score is `0.58` and it has a RMSE is `13.82`. 
 
 #### Data Sources
 * [Pitchfork](https://pitchfork.com/) Album Reviews
