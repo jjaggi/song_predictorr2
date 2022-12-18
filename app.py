@@ -7,40 +7,16 @@ import numpy as np
 
 # heading
 st.title('Predicting Spotify Popularity: Rap Music')
-
 st.text('')
+if st.checkbox("Agree T&C /Hide"):
+  url = "https://prophet.streamlit.app/"
+  st.write("check out this [link](url)")
+  
 
 # display of popularity meter and number
-popularity_display = st.empty()
-status_text = st.text('Spotify Popularity (Out of 100)')
-popularity_number = st.empty()
 
-st.text('')
-
-st.markdown('#### Use the options below to predict the popularity of a rap song on Spotify.')
-
-st.text('')
 
 # widgets for user to select values for features
-followers = st.slider('# of Spotify Followers (max. 1 million)', min_value=1000, max_value=1000000,
-                      value=500000, step=1000)
-log_followers = log(followers)
-
-danceability = st.slider('Danceability', min_value=0.0, max_value=1.0, value=0.5, step=0.01)
-energy = st.slider('Energy', min_value=0.0, max_value=1.0, value=0.5, step=0.01)
-speechiness = st.slider('Speechiness', min_value=0.0, max_value=1.0, value=0.5, step=0.01)
-valence = st.slider('Valence', min_value=0.0, max_value=1.0, value=0.5, step=0.01)
-
-st.write('<style>div.Widget.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
-mode_label = st.radio('Mode', ('Major Key', 'Minor Key'))
-mode = 1 if mode_label == 'Major Key' else 0
-
-# predict popularity
-model = load('data/final_model.pkl')
-features = np.array([mode, danceability, energy, speechiness, valence, log_followers])
-popularity = model.predict(features.reshape(1, -1))
-popularity_display.progress(int(popularity[0]))
-popularity_number.subheader(f'{int(popularity[0])}')
 
 st.text('')
 st.text('Created by Jaskaran Singh Jaggi')
