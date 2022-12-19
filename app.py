@@ -10,24 +10,20 @@ import streamlit as st
 # st.components.v1.iframe("https://prophet.streamlit.app/")
 # heading
 
+
+
+
+
+  
 st.write(f'''
-    <a target="_self" href="https://eox.at">
+    <a target="_self" href="https://prophet.streamlit.app/">
         <button>
-            Please login via Google
+            Agree T&C
         </button>
     </a>
     ''',
     unsafe_allow_html=True
 )
-
-
-st.title('Predicting Spotify Popularity: Rap Music')
-st.text('')
-if st.checkbox("Agree T&C /Hide"):
-  url = "https://prophet.streamlit.app/"
-  st.write("check out this [link](url)")
-  
-
 # # display of popularity meter and number
 
 
