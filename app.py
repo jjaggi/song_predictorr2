@@ -7,8 +7,20 @@ import streamlit as st
 # import streamlit.components.v1 as components
 
 # embed streamlit docs in a streamlit app
-st.components.v1.iframe("https://prophet.streamlit.app/")
+# st.components.v1.iframe("https://prophet.streamlit.app/")
 # heading
+
+st.write(f'''
+    <a target="_self" href="https://eox.at">
+        <button>
+            Please login via Google
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
+
+
 st.title('Predicting Spotify Popularity: Rap Music')
 st.text('')
 if st.checkbox("Agree T&C /Hide"):
