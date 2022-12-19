@@ -16,7 +16,7 @@ st.header("SONG POPULARITY PREDICTOR:")
 
   
 st.write(f'''
-    <a target="_self" href="https://prophet.streamlit.app/">
+    <a target="_self" href="https://www.freshbots.org/">
         <button>
             Agree T&C
         </button>
