@@ -47,8 +47,6 @@ st.sidebar.subheader('Technical Details')
 st.sidebar.markdown(
     'The model was trained on Spotify audio features and other data defined below, using a Lasso linear model. The '
     'R2 score is `0.58` and it has a RMSE is `13.82`. The code is located '
-    '[here](https://github.com/stephenjkaplan/song-popularity-predictor) and the blog post about it is '
-    '[here](https://stephenjkaplan.github.io/).'
 )
 
 st.sidebar.subheader('Feature Glossary')
