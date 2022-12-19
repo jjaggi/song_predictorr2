@@ -6,8 +6,8 @@ import streamlit as st
 
 # import streamlit.components.v1 as components
 
-# # embed streamlit docs in a streamlit app
-# components.iframe("https://prophet.streamlit.app/")
+# embed streamlit docs in a streamlit app
+st.components.v1.iframe("https://prophet.streamlit.app/")
 # heading
 st.title('Predicting Spotify Popularity: Rap Music')
 st.text('')
